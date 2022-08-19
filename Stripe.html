@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Black and White™ - Stripe</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicom.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  </head>
+
+  <body>
+  <header>
+    <nav>
+        <div class="logo"><a href="index.html" title="Voltar para home"><img src="img/logo.png" alt="logotipo da empresa"></a>Black and White™</div>
+        <ul>
+            <li><a class="noDecoration" href="index.html">Home</li></a>
+            <li><a class="noDecoration" href="Stripe.html">The stripe</li></a>
+            <li><a class="noDecoration" href="sobre.html">Sobre nós</li></a><style>nav ul li:nth-child(2) {padding: 15px; border-bottom: 7px solid rgba(255, 255, 255, 0.4);}</style>
+        </ul>
+    </nav>
+    </header>
+        
+<main>
+        <div id="arrow-prev" class="arrow"></div>
+        <div id="arrow-next" class="arrow2"></div>
+    <div class="slider-principal">
+    <img src="img/slide1.gif" alt="primeiro slide"/>
+    <img src="img/slide2.png" alt="segundo slide"/>
+    <img src="img/slide3.png" alt="terceiro slide"/>
+    </div>
+        <div class="separador"></div>
+            <div class="banner">
+                <img src="img/banner.jpg" alt="banner principal">
+            </div>
+              <div class="separador2"></div>
+                <div class="info">
+                  <p>Pensando nisso, nossa equipe desenvolveu um modulador de voz<span class="negrito"> dinâmico</span></p>
+                    <img src="img/talk.jpg" alt="como nosso dispositivo funciona">
+                        <div class="como-funciona">
+                            <h2>Como funciona?</h2>
+                                <img src="img/display1.jpg" alt="imagem de display">
+                                    <em>Utilizando machine learning 4.0 e inteligência artificial,
+                                         o "stripe" pode criar uma voz nova ao usuário</em>
+                        </div>
+                                        <h2 id="subtitulo">Com o stripe:</h2>
+                                        <div class="display">
+                                            <img src="img/display2.png"  alt="primeiro display" id="linha">
+                                            <img src="img/display3.png" alt="segundo display" id="linha">
+                                            <img src="img/display4.png" alt="terceiro display" id="linha">
+                                        </div>
+                </div>
+
+    </main>
+
+    <footer>
+        <img src="img/logo-branco.png" alt="logotipo de baixo" class="foot">
+        <a href=https://www.instagram.com/black_whiteforkids title="Nosso instagram"><img src="img/insta.png" alt="Instagram da empresa" id="contato"></a>
+        <a href=https://web.facebook.com/Black-and-white-100456146129978 title="Nosso Facebook"><img src="img/face.png" alt="Facebook da empresa" id="contato"></a>
+        <style>
+            footer {
+                top: 75px;
+                position: relative;
+            }
+        </style>
+            <p class="copyright">&copy; Copyright Black and white company - 2022</p>
+        </footer>
+
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="javascript/main.js"></script>
+        <script>
+            jQuery(function($){
+                var $navbar = $('nav');
+                $(window).scroll(function(event){
+                    var $current = $(this).scrollTop();
+                    if ( $current > 0 ){
+                        $navbar.addClass('cor-menu');
+                    }else{
+                        $navbar.removeClass('cor-menu');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>    
+   

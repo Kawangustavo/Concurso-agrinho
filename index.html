@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Black and White™</title>
+    <link rel="shortcut icon" href="img/favicom.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+  
+  <body>
+  <header>
+    <nav>
+        <div class="logo"><a href="index.html" title="Voltar para home"><img src="img/logo.png" alt="logotipo da empresa"></a>Black and White™</div>
+        <ul>
+            <li><a class="noDecoration" href="index.html">Home</li></a><style>nav ul li:first-child {padding: 15px; border-bottom: 7px solid rgba(255, 255, 255, 0.4)}</style>
+            <li><a class="noDecoration" href="Stripe.html">The stripe</li></a>
+            <li><a class="noDecoration" href="sobre.html">Sobre nós</li></a>
+        </ul>
+    </nav>
+    </header>
+
+    <section></section>
+
+        <div class="separador"></div><style>.separador {padding: 15px; border-top: 10px solid #8f96a3; opacity: 75%}</style>
+    
+    <main class="box">
+        <div>
+            <img src="img/stripe-home.png" alt="Aparelho stripe" id="stripe-home">
+                <p class="descricao">Corretor de dicção com tecnologia de ponta </p>
+                <a class="noDecoration" href="Stripe.html"><p class="saiba-mais">Saiba mais</p></a>
+            </div>
+    </main>
+
+    <footer>
+        <img src="img/logo-branco.png" alt="logotipo de baixo" class="foot">
+        <a href=https://www.instagram.com/black_whiteforkids title="Nosso instagram"><img src="img/insta.png" alt="Instagram da empresa" id="contato"></a>
+        <a href=https://web.facebook.com/Black-and-white-100456146129978 title="Nosso Facebook"><img src="img/face.png" alt="Facebook da empresa" id="contato"></a>
+        <p class="copyright">&copy; Copyright Black and white company - 2022</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+        jQuery(function($){
+            var $navbar = $('nav');
+            $(window).scroll(function(event){
+                var $current = $(this).scrollTop();
+                if ( $current > 0 ){
+                    $navbar.addClass('cor-menu');
+                }else{
+                    $navbar.removeClass('cor-menu');
+                }
+            });
+        });
+        </script>
+
+    </body>
+</html>

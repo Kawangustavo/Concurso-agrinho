@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Black and White™ - Sobre nós</title>
+    <link rel="shortcut icon" href="img/favicom.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>   
+  </head>
+  <body>
+  <header>
+    <nav>
+        <div class="logo"><a href="index.html" title="Voltar para home"><img src="img/logo.png" alt="logotipo da empresa"></a>Black and White™</div>
+        <ul>
+            <li><a class="noDecoration" href="index.html">Home</li></a>
+            <li><a class="noDecoration" href="Stripe.html">The stripe</li></a><style>nav ul li:last-child {padding: 15px; border-bottom: 7px solid rgba(255, 255, 255, 0.4);}</style>
+            <li><a class="noDecoration" href="sobre.html">Sobre nós</li></a>
+        </ul>
+    </nav>
+    </header>
+
+        <main class="sobre-nos">
+            <h4>Somos uma empresa humana como você</h4>
+            <video autoplay muted loop plays-inline class="back">
+                <source src="img/About.mp4" type="video/mp4">
+            </video>   
+                <div><span>Criamos soluções tecnológicas para limitações "incuráveis"</span></div>
+                  <div class="separador-sobre"></div>  
+                <div id="conteiner2">
+                     <p>Nós da Black and White™ somos uma empresa registrada especializada em tecnologia, 
+                         procuramos trazer produtos de qualidade e confiança</p>
+                         <p2>"Qual a procedência dos produtos?"</p2>
+                             <p3>Nossos produtos foram testados e aprovados por mais de cem médicos fonoaudiólogos especializados na área</p3>
+                                 <p4>"Qual o preço e onde posso encontrar esses produtos?"</p4>
+                                     <p5>O "stripe" infelizmente não sera comercializado para população comum, sera distribuído gratuitamente para hospitais e órgãos relacionados a saúde</p5>
+                                 </div>
+        </main>
+
+        <footer>
+            <img src="img/logo-branco.png" alt="logotipo de baixo" class="foot">
+            <a href=https://www.instagram.com/black_whiteforkids title="Nosso instagram"><img src="img/insta.png" alt="Instagram da empresa" id="contato"></a>
+            <a href=https://web.facebook.com/Black-and-white-100456146129978 title="Nosso Facebook"><img src="img/face.png" alt="Facebook da empresa" id="contato"></a>
+            <style>
+                footer {
+                    top: 1500px;
+                    position: relative;
+                }
+            </style>
+            <p class="copyright">&copy; Copyright Black and white company - 2022</p>
+        </footer>
+  
+        <script>
+            jQuery(function($){
+                var $navbar = $('nav');
+                $(window).scroll(function(event){
+                    var $current = $(this).scrollTop();
+                    if ( $current > 0 ){
+                        $navbar.addClass('cor-menu');
+                    }else{
+                        $navbar.removeClass('cor-menu');
+                    }
+                });
+            });
+        </script> 
+    </body>
+</html>
+
+    
