@@ -331,26 +331,22 @@ footer p {
 }
 
 .sobre-nos h4 {
-  position: absolute;
-  z-index: 1;
-  right: 460px;
-  top: 18%;
-  color: white;
-  margin: 10px 500px;
-  font-size: 6em;
-  text-align: left;
-  transition: 150ms;
+    position: absolute;
+    z-index: 1;
+    margin: 10%;
+    color: white;
+    font-size: 16vh;
+    text-align: center
 }
 
 .sobre-nos h4:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 6.5em;
-  right: 420px;
+  font-size: 16.5vh;
 }
 
 .back {
   position: absolute;
-  width: 1366px;
+  width: 100%;
 }
 
 .sobre-nos span {
