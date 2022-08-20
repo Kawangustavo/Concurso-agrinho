@@ -145,7 +145,7 @@ hr {
 
 .slider-principal {
   width: 100%;
-  position: absolute;
+  position: relative;
 }
 
 .arrow {
