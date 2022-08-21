@@ -342,6 +342,7 @@ footer p {
 .sobre-nos h4:hover {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 16.5vh;
+  transition: 150ms;
 }
 .back {
   position: relative;
