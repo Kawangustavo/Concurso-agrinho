@@ -160,7 +160,7 @@ hr {
 }
 
 .arrow2 {
-     position: absolute;
+    position: absolute;
     z-index: 1;
     width: 10%;
     height: 93%;
@@ -168,7 +168,7 @@ hr {
     background-size: 70% auto;
     background-position: center;
     cursor: pointer;
-    right: 24px;
+    right:0%;
 }
 
 #arrow-prev {
